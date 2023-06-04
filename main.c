@@ -336,26 +336,26 @@ int main(void) {
     printf("5 - Sair\n");
     scanf("%d", &op);
 
-    if (op == 1) {
-      float lat, lon;
-      printf("Informe a latitude e a longitude\n");
-      scanf("%f %f", &lat, &lon);
-      encontrarSucessorMunicipio(arvorekd.raiz, lat, lon);
-    } else if (op == 2) {
+  if (op == 1) {
       float lat, lon;
       printf("Informe a latitude e a longitude\n");
       scanf("%f %f", &lat, &lon);
       encontrarPredecessorMunicipio(arvorekd.raiz, lat, lon);
+    } else if (op == 2) {
+      float lat, lon;
+      printf("Informe a latitude e a longitude\n");
+      scanf("%f %f", &lat, &lon);
+      encontrarSucessorMunicipio(arvorekd.raiz, lat, lon);
     } else if (op == 3) {
       float lat, lon;
       printf("Informe a latitude e a longitude\n");
       scanf("%f %f", &lat, &lon);
-      encontrarSucessorFastFood(arvorekd.raiz, lat, lon);
+      encontrarPredecessorFastFood(arvorekd.raiz, lat, lon);
     } else if (op == 4) {
       float lat, lon;
       printf("Informe a latitude e a longitude\n");
       scanf("%f %f", &lat, &lon);
-      encontrarPredecessorFastFood(arvorekd.raiz, lat, lon);
+      encontrarSucessorFastFood(arvorekd.raiz, lat, lon);
     }
   } while (op != 5);
 
