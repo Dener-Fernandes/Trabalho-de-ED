@@ -22,7 +22,6 @@ typedef struct fastFood {
   char website[100];
   float latitude;
   float longitude;
-  char nome[50];
   char coordenada[15];
 } fastFood;
 
